@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
-import { MatButtonModule } from '@angular/material';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -13,7 +13,7 @@ import { MatButtonModule } from '@angular/material';
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
-    MatButtonModule
+    FlexLayoutModule
   ],
   providers: [ ],
   bootstrap: [ AppComponent ]
