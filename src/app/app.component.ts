@@ -10,6 +10,7 @@ export class AppComponent {
 
   result = 0;
   digit = '' ;
+  showNeverSettle = false;
 
   pushDigit(number): void {
     this.digit += number;
@@ -22,9 +23,21 @@ export class AppComponent {
   clearData(): void {
     this.result = 0;
     this.digit = '';
+    this.showNeverSettle = false;
   }
 
   deleteLastDigit() {
     this.digit = this.digit.slice(0, -1);
+  }
+
+  pushSymbol(symbol): void {
+    this.digit += symbol;
+  }
+
+  showResults(): void {
+    if (this.digit == '1+')
+      this.showNeverSettle = true;
+    this.result = 0;
+
   }
 }

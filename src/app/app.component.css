@@ -62,3 +62,10 @@
   cursor: pointer;
 }
 
+.show-never-settle {
+  height: 260px;
+  width: 390px;
+  background: url("https://d1p42fqrbwqdsw.cloudfront.net/campaigns/background_images/000/026/801/web/black-red_NS.jpg?1432269686") no-repeat;
+  background-size: 390px 260px;
+}
+
