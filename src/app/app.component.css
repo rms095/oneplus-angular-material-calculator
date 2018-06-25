@@ -39,6 +39,8 @@
 
 .display-operations {
   background-color: #505050;
+  font-size: 35px;
+  font-weight: 100;
 }
 
 .yellow-patch {
@@ -48,5 +50,15 @@
 
 .grid-for-numbers {
   padding-top: 25px;
+}
+
+.mat-grid-tile:active {
+  background-color: #5A5A5A;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.mat-grid-tile:hover {
+  cursor: pointer;
 }
 
