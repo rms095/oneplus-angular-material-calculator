@@ -1,24 +1,24 @@
 <div fxFlex fxLayoutAlign="center center">
   <mat-card fxFlex fxLayout="column" class="calculator-size mat-elevation-z8">
     <mat-card-header class="card-header-layout" fxLayoutAlign="end end">
-      <mat-card-title class="display-digits">1234</mat-card-title>
-      <mat-card-subtitle class="display-result">1234</mat-card-subtitle>
+      <mat-card-title class="display-digits">{{digit}}</mat-card-title>
+      <mat-card-subtitle class="display-result">{{result}}</mat-card-subtitle>
     </mat-card-header>
     <mat-card-content fxFlex fxLayout="row" class="card-buttons-operation-layout">
       <div fxFlex="75%" class="display-numbers">
         <mat-grid-list cols="3" rowHeight="1:1" class="grid-for-numbers">
-          <mat-grid-tile>7</mat-grid-tile>
-          <mat-grid-tile>8</mat-grid-tile>
-          <mat-grid-tile>9</mat-grid-tile>
-          <mat-grid-tile>4</mat-grid-tile>
-          <mat-grid-tile>5</mat-grid-tile>
-          <mat-grid-tile>6</mat-grid-tile>
-          <mat-grid-tile>1</mat-grid-tile>
-          <mat-grid-tile>2</mat-grid-tile>
-          <mat-grid-tile>3</mat-grid-tile>
-          <mat-grid-tile>.</mat-grid-tile>
-          <mat-grid-tile>0</mat-grid-tile>
-          <mat-grid-tile style="font-size: 20px">DEL</mat-grid-tile>
+          <mat-grid-tile (click)="pushDigit(7)">7</mat-grid-tile>
+          <mat-grid-tile (click)="pushDigit(8)">8</mat-grid-tile>
+          <mat-grid-tile (click)="pushDigit(9)">9</mat-grid-tile>
+          <mat-grid-tile (click)="pushDigit(4)">4</mat-grid-tile>
+          <mat-grid-tile (click)="pushDigit(5)">5</mat-grid-tile>
+          <mat-grid-tile (click)="pushDigit(6)">6</mat-grid-tile>
+          <mat-grid-tile (click)="pushDigit(1)">1</mat-grid-tile>
+          <mat-grid-tile (click)="pushDigit(2)">2</mat-grid-tile>
+          <mat-grid-tile (click)="pushDigit(3)">3</mat-grid-tile>
+          <mat-grid-tile (click)="pushDot()">.</mat-grid-tile>
+          <mat-grid-tile (click)="pushDigit(0)">0</mat-grid-tile>
+          <mat-grid-tile (click)="deleteLastDigit()" style="font-size: 20px">DEL</mat-grid-tile>
         </mat-grid-list>
       </div>
       <div fxFlex="20%" class="display-operations">
