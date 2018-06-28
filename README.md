@@ -1,17 +1,11 @@
 # Oneplus Angular Material Calculator
 
-# Technology Stack :
+## Technology Stack :
 Angular - 6.0.3
 
 Angular Material - 6.0.3
 
 Angular Flex Layout - 6.0.3
-
-
-
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
-
 
 ## Development server
 
