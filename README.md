@@ -7,6 +7,10 @@ Angular Material - 6.0.3
 
 Angular Flex Layout - 6.0.3
 
+## NEVER SETTLE
+Press 1 and Press Plus (+) and finally Press equal to (=) 
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
